@@ -1,16 +1,17 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
+import NewsList from './NewsList';
 
 function NewsFetch() {
-    const [news, setNews] = useState([]);
+    const [newsResponse, setNewsResponse] = useState([]);
     const url = 'https://saurav.tech/NewsAPI/top-headlines/category/general/in.json';
 
     useEffect(() => {
         axios.get(url)
         .then(res => {
-            setNews(res.data.articles);
+            setNewsResponse(res.data.articles);
             console.log(res.data.articles);
-            console.log(news);
+            console.log(newsResponse);
         })
         .catch(err => {
             console.log(err);
@@ -19,7 +20,7 @@ function NewsFetch() {
     
     return (
         <div>
-            
+            <NewsList response = { newsResponse } />
         </div>
     );
 }

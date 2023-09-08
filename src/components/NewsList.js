@@ -1,9 +1,9 @@
 import NewsShow from "./NewsShow";
 
 function NewsList({ response }) {
-    const renderNews = response.map((news, key) => {
+    const renderNews = response.map((news) => {
         return(
-            <NewsShow renderedNews = { news } key = { key }/>
+            <NewsShow renderedNews = { news } key = { news.publishedAt }/>
         );
     });
 

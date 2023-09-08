@@ -1,0 +1,43 @@
+.news-container {
+    width: 90%;
+    height: 30%;
+    margin: 2% 5% 2% 5%;
+}
+
+.news-content {
+    float: left;
+    width: 60%;
+    min-height: 200px;
+    max-height: 200px;
+    margin-bottom: 2%;
+    padding: 2% 2% 2% 2%;
+    background-color: #f7fffd;
+    border-radius: 1rem;
+    overflow: auto;
+}
+
+.news-content:hover {
+    box-shadow: 3px 3px 3px 3px #a8e1d4;
+    transform: scale(1.1);
+}
+
+.news-image {
+    float: right;
+    width: 30%;
+    min-height: 200px;
+    max-height: 200px;
+    margin-bottom: 2%;
+    padding: 2% 2% 2% 2%;
+    border-radius: 1rem;
+}
+
+.news-image img {
+    width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    border-radius: 1rem;
+}
+
+.news-image img:hover {
+    transform: scale(1.25);
+}

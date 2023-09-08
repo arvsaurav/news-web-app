@@ -10,8 +10,6 @@ function NewsFetch() {
         axios.get(url)
         .then(res => {
             setNewsResponse(res.data.articles);
-            console.log(res.data.articles);
-            console.log(newsResponse);
         })
         .catch(err => {
             console.log(err);

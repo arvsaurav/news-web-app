@@ -1,3 +1,5 @@
+import '../NewsShow.css';
+
 function NewsShow({ renderedNews }) {
 
     const title = renderedNews.title;
@@ -6,15 +8,15 @@ function NewsShow({ renderedNews }) {
     const source = renderedNews.source.name;
     const image = renderedNews.urlToImage;
 
-    return(
-        <div>
-            <div>
-                <h1>{ title }</h1>
-                <h3>{ description }</h3>
-                <a href={ redirectToArticle } />
+    return (
+        <div className='news-container'>
+            <div className='news-content'>
+                <h2>{ title }</h2>
+                <p>{ description }</p>
                 <p>{ source }</p>
+                <a href={ redirectToArticle } target='_blank'>View full article</a>
             </div>
-            <div>
+            <div className='news-image'>
                 <img src={ image } />
             </div>
         </div>

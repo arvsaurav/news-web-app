@@ -11,7 +11,7 @@
     max-height: 200px;
     margin-bottom: 2%;
     padding: 2% 2% 2% 2%;
-    background-color: #f7fffd;
+    background-color: #ebf9f6;
     border-radius: 1rem;
     overflow: auto;
 }
@@ -40,4 +40,8 @@
 
 .news-image img:hover {
     transform: scale(1.25);
+}
+
+#source-id {
+    color: #3c7c6f;
 }

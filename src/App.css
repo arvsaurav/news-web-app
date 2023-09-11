@@ -3,6 +3,7 @@
     font-family: cursive;
     padding-top: 1%;
     padding-bottom: 1%;
-    background-color: #a0cbcb;
+    background-color: rgba(92, 212, 236);
     color: white;
+    border-radius: 1rem;
 }

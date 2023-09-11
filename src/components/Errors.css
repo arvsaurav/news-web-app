@@ -1,0 +1,9 @@
+.errorBox {
+    margin: auto;
+    width: 90%;
+    padding: 2% 2% 2% 2%;
+    font-family: cursive;
+    color: rgb(42, 35, 35);
+    background-color: #ebf9f6;
+    border-radius: 1rem;
+}

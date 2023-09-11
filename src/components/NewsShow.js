@@ -1,4 +1,4 @@
-import '../NewsShow.css';
+import './NewsShow.css';
 
 function NewsShow({ renderedNews }) {
 
@@ -13,11 +13,11 @@ function NewsShow({ renderedNews }) {
             <div className='news-content'>
                 <h2>{ title }</h2>
                 <p>{ description }</p>
-                <p>{ source }</p>
-                <a href={ redirectToArticle } target='_blank'>View full article</a>
+                <p id='source-id'>{ source }</p>
+                <a href={ redirectToArticle } target='_blank' rel='noreferrer'>View full article</a>
             </div>
             <div className='news-image'>
-                <img src={ image } />
+                <img src={ image } alt={ title } />
             </div>
         </div>
     );
